@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>系统初始化 - Golden Noise</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Golden Noise 系统设置</h1>
+        <nav>
+            <a href="judge.html">图像评估</a>
+            <a href="/">返回首页</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="initialization">
+            <h2>系统初始化</h2>
+            <div class="form-group">
+                <label for="prompt-file">提示词文件路径:</label>
+                <input type="file" id="prompt-file" accept=".json" />
+            </div>
+            <div class="form-group">
+                <label for="init-model-select">初始化模型:</label>
+                <select id="init-model-select">
+                    <option value="runwayml/stable-diffusion-v1-5">Stable Diffusion v1.5</option>
+                    <option value="Flux/FLUX.1-schnell">FLUX.1-schnell</option>
+                    <option value="stabilityai/stable-diffusion-xl-base-1.0">SDXL 1.0</option>
+                </select>
+            </div>
+            <button id="init-btn" class="primary-btn">初始化系统</button>
+            <div id="init-status" class="status-area">
+                <!-- 初始化状态将在这里显示 -->
+            </div>
+        </section>
+
+        <section class="model-settings">
+            <h2>模型配置</h2>
+            <div class="form-group">
+                <label for="model-select">默认模型:</label>
+                <select id="model-select">
+                    <option value="runwayml/stable-diffusion-v1-5">Stable Diffusion v1.5</option>
+                    <option value="Flux/FLUX.1-schnell">FLUX.1-schnell</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="generation-settings">
+            <h2>生成参数</h2>
+            <div class="form-group">
+                <label for="steps-input">推理步数:</label>
+                <input type="number" id="steps-input" min="1" max="100" value="20">
+            </div>
+            <div class="form-group">
+                <label for="guidance-input">引导系数:</label>
+                <input type="number" id="guidance-input" min="1" max="20" step="0.5" value="7.5">
+            </div>
+        </section>
+
+        <section class="lora-settings">
+            <h2>LoRA 管理</h2>
+            <div id="lora-list">
+                <!-- LoRA 列表将通过JS动态加载 -->
+            </div>
+            <div class="upload-form">
+                <h3>上传新LoRA</h3>
+                <input type="file" id="lora-upload" accept=".safetensors">
+                <button id="upload-btn">上传</button>
+            </div>
+        </section>
+
+    <section class="actions">
+        <button id="save-settings">保存设置</button>
+    </section>
+
+    <section class="judge-interface">
+        <h2>图像评估</h2>
+        <div class="prompt-info">
+            <p>提示词: <span id="prompt-text"></span></p>
+            <p>模型: <span id="model-name"></span></p>
+            <p>种子: <span id="seed-value"></span></p>
+        </div>
+        
+        <div class="image-pair">
+            <div class="image-container">
+                <img id="image-a" src="" alt="Image A">
+                <span>Image A (按1)</span>
+            </div>
+            <div class="image-container">
+                <img id="image-b" src="" alt="Image B">
+                <span>Image B (按2)</span>
+            </div>
+        </div>
+
+        <div class="evaluation-controls">
+            <div class="progress">
+                <span id="progress-current">0</span>/<span id="progress-total">0</span>
+            </div>
+            <button id="skip-btn">跳过(S)</button>
+            <button id="submit-btn">提交(空格)</button>
+        </div>
+    </section>
+</main>
+
+<script src="js/settings.js"></script>
+<script src="js/judge.js"></script>
+    <style>
+        .initialization {
+            margin-bottom: 2rem;
+        }
+        #init-btn {
+            margin: 1rem 0;
+            padding: 0.75rem 1.5rem;
+            font-size: 1.1rem;
+        }
+        .status-area {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 60px;
+            margin-top: 1rem;
+        }
+        
+        .judge-interface {
+            margin-top: 2rem;
+            padding: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .image-pair {
+            display: flex;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+        
+        .image-container {
+            text-align: center;
+        }
+        
+        .image-container img {
+            max-width: 512px;
+            max-height: 512px;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+        
+        .image-container img.selected {
+            border-color: #4CAF50;
+        }
+        
+        .evaluation-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .progress {
+            margin-right: auto;
+        }
+    </style>
+</body>
+</html>

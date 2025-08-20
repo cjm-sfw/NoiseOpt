@@ -1,0 +1,31 @@
+/usr/local/miniconda3/envs/py312/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@f3be6cd7bf2e v5.5.3 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.0-113-generic-x86_64-with-glibc2.35 2025-08-20 13:21:43
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         tasks:0x7ff19f9de2d0
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 1 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . tasks.generate_single_image
+
+[2025-08-20 13:21:43,418: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2025-08-20 13:21:43,422: INFO/MainProcess] mingle: searching for neighbors
+[2025-08-20 13:21:44,427: INFO/MainProcess] mingle: all alone
+[2025-08-20 13:21:44,435: INFO/MainProcess] celery@f3be6cd7bf2e ready.

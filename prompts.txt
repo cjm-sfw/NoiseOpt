@@ -1,0 +1,6 @@
+# 初始Prompt列表（一行一个）
+a photo of an astronaut riding a horse on mars
+a painting of a cyberpunk city at night
+a 3D render of a futuristic spaceship
+a realistic photo of a golden retriever puppy
+a digital art piece of a fantasy landscape

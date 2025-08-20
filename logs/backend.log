@@ -1,0 +1,28 @@
+2025-08-20 12:13:50,148 - app - INFO - Fetching judge queue
+2025-08-20 13:33:13,253 - app - INFO - 系统数据加载完成
+2025-08-20 13:37:16,752 - app - INFO - 系统数据加载完成
+2025-08-20 13:44:11,151 - app - INFO - 开始加载系统初始数据
+2025-08-20 13:44:11,151 - app - INFO - 系统数据加载完成
+2025-08-20 13:44:11,151 - app - INFO - 开始生成评估队列
+2025-08-20 13:44:11,161 - app - ERROR - 生成评估队列失败: Extra data: line 2 column 1 (char 80)
+2025-08-20 13:44:11,161 - app - CRITICAL - 系统初始化失败: Extra data: line 2 column 1 (char 80)
+2025-08-20 13:50:51,349 - app - INFO - 开始加载系统初始数据
+2025-08-20 13:50:51,350 - app - INFO - 系统数据加载完成
+2025-08-20 13:50:51,350 - app - INFO - 开始生成评估队列
+2025-08-20 13:50:51,359 - app - ERROR - 生成评估队列失败: Extra data: line 2 column 1 (char 80)
+2025-08-20 13:50:51,359 - app - CRITICAL - 系统初始化失败: Extra data: line 2 column 1 (char 80)
+2025-08-20 13:51:07,686 - app - INFO - 开始加载系统初始数据
+2025-08-20 13:51:07,686 - app - INFO - 系统数据加载完成
+2025-08-20 13:51:07,686 - app - INFO - 开始生成评估队列
+2025-08-20 13:51:07,696 - app - ERROR - 生成评估队列失败: Extra data: line 2 column 1 (char 80)
+2025-08-20 13:51:07,696 - app - CRITICAL - 系统初始化失败: Extra data: line 2 column 1 (char 80)
+2025-08-20 13:51:44,686 - app - INFO - 开始加载系统初始数据
+2025-08-20 13:51:44,687 - app - INFO - 系统数据加载完成
+2025-08-20 13:51:44,687 - app - INFO - 开始生成评估队列
+2025-08-20 13:51:44,695 - app - ERROR - 生成评估队列失败: Extra data: line 2 column 1 (char 80)
+2025-08-20 13:51:44,695 - app - CRITICAL - 系统初始化失败: Extra data: line 2 column 1 (char 80)
+2025-08-20 13:52:05,606 - app - INFO - 开始加载系统初始数据
+2025-08-20 13:52:05,607 - app - INFO - 系统数据加载完成
+2025-08-20 13:52:05,607 - app - INFO - 开始生成评估队列
+2025-08-20 13:52:05,617 - app - ERROR - 生成评估队列失败: Extra data: line 2 column 1 (char 80)
+2025-08-20 13:52:05,617 - app - CRITICAL - 系统初始化失败: Extra data: line 2 column 1 (char 80)

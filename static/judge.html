@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像评估 - Golden Noise</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Golden Noise 图像评估</h1>
+        <nav>
+            <a href="settings.html">系统设置</a>
+            <a href="/">返回首页</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="prompt-info">
+            <h2>提示词: <span id="prompt-text"></span></h2>
+            <p>模型: <span id="model-name"></span></p>
+            <p>种子: <span id="seed-value"></span></p>
+        </section>
+
+        <section class="image-display">
+            <div class="image-pair">
+                <img id="image-a" src="" alt="图像A" class="compare-image">
+                <img id="image-b" src="" alt="图像B" class="compare-image">
+            </div>
+            <div class="progress-info">
+                <p>进度: <span id="progress-current">0</span>/<span id="progress-total">0</span></p>
+            </div>
+        </section>
+
+        <section class="evaluation-controls">
+            <h3>评估选项</h3>
+            <div class="rating">
+                <button class="rate-btn" data-score="1">1分 (质量差)</button>
+                <button class="rate-btn" data-score="2">2分 (可接受)</button>
+                <button class="rate-btn" data-score="3">3分 (一般)</button>
+                <button class="rate-btn" data-score="4">4分 (好)</button>
+                <button class="rate-btn" data-score="5">5分 (优秀)</button>
+            </div>
+            <div class="actions">
+                <button id="skip-btn">跳过</button>
+                <button id="submit-btn">提交评估</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/judge.js"></script>
+</body>
+</html>
