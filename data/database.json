@@ -1,0 +1,66 @@
+[
+  {
+    "prompt": "A beautiful landscape",
+    "golden_images": [
+      {
+        "seed": 187082,
+        "clip_score": 1,
+        "image_path": "data/images/389f6dd4-ecc6-41e0-9b63-6828bd31594c.png"
+      }
+    ],
+    "all_images": [
+      {
+        "seed": 895877,
+        "clip_score": 1,
+        "image_path": "data/images/e7059828-08aa-4265-8134-3d2b1c0c4dda.png"
+      },
+      {
+        "seed": 140382,
+        "clip_score": 1,
+        "image_path": "data/images/562ac116-a6c3-44f4-9034-3e1c06484f1c.png"
+      },
+      {
+        "seed": 187082,
+        "clip_score": 1,
+        "image_path": "data/images/389f6dd4-ecc6-41e0-9b63-6828bd31594c.png"
+      },
+      {
+        "seed": 533799,
+        "clip_score": 1,
+        "image_path": "data/images/1888e26f-67d4-424d-86f7-f1a6deaa3e1f.png"
+      }
+    ]
+  },
+  {
+    "prompt": "A beautiful landscape",
+    "golden_images": [
+      {
+        "seed": 148315,
+        "clip_score": 1,
+        "image_path": "data/images/bc736020-5e3d-4367-8ab5-3aad1c5b9ca1.png"
+      }
+    ],
+    "all_images": [
+      {
+        "seed": 350793,
+        "clip_score": 1,
+        "image_path": "data/images/18b6df3e-0304-4243-a9cc-20b9f5d961bc.png"
+      },
+      {
+        "seed": 148315,
+        "clip_score": 1,
+        "image_path": "data/images/bc736020-5e3d-4367-8ab5-3aad1c5b9ca1.png"
+      },
+      {
+        "seed": 204011,
+        "clip_score": 1,
+        "image_path": "data/images/4dfc4b7d-f552-417a-833f-8383eae5b102.png"
+      },
+      {
+        "seed": 516526,
+        "clip_score": 1,
+        "image_path": "data/images/5dd74d7f-2492-4685-bfa5-ea0bad56371f.png"
+      }
+    ]
+  }
+]
